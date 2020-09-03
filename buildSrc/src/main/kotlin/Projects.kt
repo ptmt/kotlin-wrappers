@@ -44,7 +44,7 @@ private val Project.npmVersionBuild: String
         .let { if (it.isNotEmpty()) "-$it" else "" }
 
 internal val Project.kotlinVersion: String
-    get() = version("kotlin")
+    get() = "1.4.10"
 
 internal fun Project.publishVersion(): String =
     "$npmVersion-kotlin-$kotlinVersion"
